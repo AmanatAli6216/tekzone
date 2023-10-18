@@ -3,12 +3,18 @@
     #uni_modal .modal-footer {
         display: none
     }
+    #shptitle{
+        font-weight:100px !important;
+    }
 </style>
 <div class="container-fluid">
     <div id="outprint">
         <div class="lh-1">
-            <center><small class="fw-bold">Grocery POS</small></center>
-            <center><small class="fw-bold">Unofficial Receipt</small></center>
+            <center><small class="fw-bold" style="font-weight:bold;"><h2><u>SHAHBAZ GLASS WORKS</u></h2></small></center>
+            <center><small class=""><i>Thanks to be our Valude Customer!</i></small></center><p>
+            <br>
+            <small class="">Main Bazaar Pattoki:</small>
+            <small class="">0345-44-11-636</small>
         </div>
         <hr>
         <div class="lh-1">
@@ -21,6 +27,7 @@
         <div class="lh-1">
             <div class="d-flex w-100 align-items-end border-bottom">
                 <div class="col-2 text-center fw-bold">Qty</div>
+                <div class="col-1 text-center fw-bold">ID</div>
                 <div class="col-6 text-center fw-bold">Product</div>
                 <div class="col-4 text-center fw-bold">Amount</div>
             </div>
@@ -46,7 +53,7 @@
                 <div class="col-6 text-end fw-bold">{{ transaction.tax_amount|intcomma|floatformat:2 }}</div>
             </div>
             <div class="d-flex w-100 align-items-end">
-                <div class="col-6 text-start fw-bold">Tenedered</div>
+                <div class="col-6 text-start fw-bold">Paid</div>
                 <div class="col-6 text-end fw-bold">{{ transaction.tendered_amount|intcomma }}</div>
             </div>
             <div class="d-flex w-100 align-items-end">
