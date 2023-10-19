@@ -45,7 +45,7 @@
             {% endfor %}
             <hr>
             <div class="d-flex w-100 align-items-end">
-                <div class="col-6 text-start fw-bold">Total</div>
+                <div class="col-6 text-start fw-bold">Total Bill</div>
                 <div class="col-6 text-end fw-bold">{{ transaction.grand_total|intcomma }}</div>
             </div>
             <div class="d-flex w-100 align-items-end">
@@ -53,7 +53,7 @@
                 <div class="col-6 text-end fw-bold">{{ transaction.tax_amount|intcomma|floatformat:2 }}</div>
             </div>
             <div class="d-flex w-100 align-items-end">
-                <div class="col-6 text-start fw-bold">Paid</div>
+                <div class="col-6 text-start fw-bold">Paid Amount</div>
                 <div class="col-6 text-end fw-bold">{{ transaction.tendered_amount|intcomma }}</div>
             </div>
             <div class="d-flex w-100 align-items-end">
@@ -69,6 +69,8 @@
         <button class="btn btn-secondary bg-gradient border rounded-0 btn-sm" type="button" data-bs-dismiss="modal"><i class="mdi mdi-close"></i> Close</button>
     </div>
 </div>
+<small><i>Developed by:</i></small>
+<p>tekzone:+92 0345 44 11 636</p>
 <script>
     $(function() {
         $('#receipt_print').click(function() {
